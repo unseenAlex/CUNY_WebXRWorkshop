@@ -1,22 +1,26 @@
 <!--A-frame starter template-->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>AFRAME Template</title>
-		<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-	</head>
-	<body>
-		<a-scene>
-            <a-camera>
-                <a-cursor geometry = "primitive: ring" material = "color:#FFF; shader:flat"></a-cursor>
-            </a-camera>
-            <a-box color="green" position="0 2 -3"></a-box>
-            <a-box color="red" position ="0 1 -3" rotation = "0 25 0 "></a-box>
-        </a-scene>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AFRAME Template</title>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-box color="green" position="0 2 -3"></a-box>
+        <a-box color="red" position="0 1 -3" rotation="0 25 0 "></a-box>
         
-        <script src = "func.js"></script>
-	</body>
+        <a-camera>
+            <a-cursor geometry="primitive: ring" material="color:#FFF; shader:flat"></a-cursor>
+        </a-camera>
+    </a-scene>
+
+    <script src="func.js"></script>
+</body>
+
 </html>
